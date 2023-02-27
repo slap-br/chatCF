@@ -91,9 +91,9 @@ export default function CustomActions(props) {
             // Create a new XMLHttpRequest and set its responseType to 'blob'
             xhr.responseType = 'blob';
             // open the connection and retrieve the URI’s data (the image)
-            xhr.open('GET', uri, true);
-            xhr.send(null);
-        });
+                xhr.open('GET', uri, true);
+                xhr.send(null);
+            });
 
         // create a reference to the Firebase Storage
         const imageNameBefore = uri.split('/');
